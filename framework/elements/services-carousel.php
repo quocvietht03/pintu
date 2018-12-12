@@ -270,7 +270,7 @@ vc_map(array(
 		),
 		array(
 			'type' => 'bt_layout',
-			'posttype' => 'services',
+			'folder' => 'services',
 			'heading' => esc_html__('Layout', 'pintu'),
 			'param_name' => 'layout',
 			'value' => array(

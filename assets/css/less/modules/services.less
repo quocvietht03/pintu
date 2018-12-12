@@ -1,0 +1,465 @@
+.bt-service-media-style{
+	.bt-media{
+		margin-bottom: 30px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		box-shadow: 5px 0 35px fadeout(#000000, 85);
+		img{
+			width: 100%;
+			height: auto;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+		}
+	}
+}
+.bt-service-item-header-style{
+	.bt-header{
+		margin-bottom: 15px;
+		.bt-icon{
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 100px;
+			height: 100px;
+			margin: 0 30px 15px 0;
+			border: 1px dashed #b5b5b5;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				width: ~"calc(100% - 10px)";
+				height: ~"calc(100% - 10px)";
+				border: 1px dashed #b5b5b5;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #ffffff;
+				z-index: 3;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+				-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+				box-shadow: 5px 0 35px fadeout(#000000, 85);
+				-webkit-transform: rotate(45deg) scale(0.85);
+				-ms-transform: rotate(45deg) scale(0.85);
+				transform: rotate(45deg) scale(0.85);
+			}
+			i, img{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 36px;
+				color: @main-color;
+				max-width: 60px;
+				max-height: 60px;
+				z-index: 9;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				-ms-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+			}
+		}
+		.bt-content{
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 15px;
+			.bt-title{
+				font-size: 24px;
+				line-height: 28px;
+				margin-top: 5px;
+				margin-bottom: 0;
+			}
+			.bt-term{
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 0;
+				a{
+					color: @main-color;
+					&:hover{
+						color: darken(@main-color, 10);
+					}
+				}
+			}
+		}
+	}
+}
+
+.bt-sidebar{
+	.bt-brochure-block{
+		padding: 60px 50px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		box-shadow: 5px 0 35px fadeout(#000000, 85);
+		.bt-title{
+			font-size: 30px;
+			font-weight: 800;
+			margin-bottom: 15px;
+		}
+		.bt-desc{
+			margin-bottom: 30px;
+		}
+		.bt-button-main-color;
+	}
+	.bt-question-form{
+		text-align: center;
+		background: @main-color;
+		margin: 0 auto 30px;
+		padding: 50px 40px;
+		max-width: 420px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		box-shadow: 5px 0 35px fadeout(#000000, 85);
+		.bt-title{
+			font-size: 30px;
+			font-weight: 800;
+			line-height: 36px;
+			margin-bottom: 5px;
+			color: #ffffff;
+		}
+		.bt-subtitle{
+			color: #ffffff;
+			margin-bottom: 30px;
+		}
+		.wpcf7-form-control-wrap{
+			display: block;
+			text-align: left;
+			margin-bottom: 30px;
+			input, select, textarea{
+				width: 100%;
+				background-color: #ffffff;
+				margin: 0;
+				padding: 12px 20px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+				-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+				box-shadow: 5px 0 35px fadeout(#000000, 85);
+			}
+			select{
+				min-height: 45px;
+				padding: 12px 20px;
+			}
+		}
+		
+		.bt-submit{
+			input{
+				font-size: 13px;
+				font-weight: 700;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: #ffffff;
+				background: #080808;
+				width: 100%;
+				margin-bottom: 0;
+				padding: 12px 30px;
+				border: none;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+				-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+				box-shadow: 5px 0 35px fadeout(#000000, 85);
+				&:hover{
+					background: darken(@secondary-color, 10);
+				}
+			}
+		}
+	}
+	.bt-practice-areas{
+		position: relative;
+		background: #f8f8f8;
+		padding: 50px 35px 90px;
+		overflow: hidden;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		box-shadow: 5px 0 35px fadeout(#000000, 85);
+		.bt-title{
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 26px;
+			color: #333333;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+		.bt-subtitle{
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 24px;
+			color: @main-color;
+			margin-bottom: 15px;
+		}
+		.bt-options{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				font-size: 15px;
+				font-style: italic;
+				line-height: 24px;
+				color: #444444;
+				margin-bottom: 15px;
+				&:before{
+					content: "\f0da";
+					font-family: Fontawesome;
+					font-style: normal;
+					color: @main-color;
+					display: inline-block;
+					margin-right: 5px;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.bt-free-consultant{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			font-size: 15px;
+			font-weight: 800;
+			line-height: 24px;
+			text-transform: uppercase;
+			text-align: center;
+			color: #ffffff;
+			background: @main-color;
+			padding: 12px 20px;
+		}
+	}
+	.bt-banner-call-back{
+		position: relative;
+		background: @main-color;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		box-shadow: 5px 0 35px fadeout(#000000, 85);
+		img{
+			width: 100%;
+			height: auto;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+		}
+		.bt-title{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 75px 40px 20px;
+			h3{
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 30px;
+				text-transform: uppercase;
+				color: #000000;
+				margin-bottom: 5px;
+				strong{
+					font-size: 30px;
+					font-weight: 900;
+				}
+			}
+			h4{
+				font-size: 13px;
+				font-weight: 700;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: #000000;
+				margin-bottom: 0;
+			}
+		}
+		.bt-btn-contact{
+			position: absolute;
+			bottom: 60px;
+			left: 40px;
+			width: ~"calc(100% - 80px)";
+			font-size: 15px;
+			font-weight: 900;
+			line-height: 24px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #ffffff;
+			background: #000000;
+			padding: 12px 20px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+			-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+			box-shadow: 5px 0 35px fadeout(#000000, 85);
+			&:hover, &:focus{
+				color: #ffffff;
+				background: #333333;
+			}
+		}
+	}
+	.bt-appointment-form, .bt-get-a-quote-form{
+		background: @main-color;
+		padding: 50px 30px 35px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+		box-shadow: 5px 0 35px fadeout(#000000, 85);
+		.bt-heading{
+			font-size: 20px;
+			line-height: 24px; 
+			color: #ffffff;
+			margin-bottom: 5px;
+		}
+		.bt-sub-heading{
+			font-size: 13px;
+			line-height: 24px;
+			color: #ffffff;
+			margin-bottom: 30px;
+		}
+		.wpcf7-form-control-wrap{
+			display: block;
+			margin-bottom: 10px;
+		}
+		input, select, textarea{
+			font-size: 15px;
+			font-style: italic;
+			line-height: 24px;
+			background-color: #ffffff;
+			width: 100%;
+			margin-bottom: 0;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+		}
+		select{
+			height: 46px;
+		}
+		textarea{
+			max-height: 180px;
+		}
+		input[type="submit"]{
+			display: block;
+			font-size: 13px;
+			font-weight: 900;
+			font-style: normal;
+			text-transform: uppercase;
+			color: #ffffff;
+			background: #080808;
+			width: auto;
+			margin: 15px auto 0;
+			padding: 10px 30px;
+			border: none;
+			&:hover, &:focus{
+				color: #080808;
+				background: #ffffff;
+			}
+		}
+	}
+	.bt-appointment-form{
+		input[type="submit"]{
+			-webkit-border-radius: 30px;
+			border-radius: 30px;
+		}
+		
+	}
+	.bt-get-a-quote-form{
+		.bt-heading{
+			font-size: 26px;
+			font-weight: 900;
+			line-height: 26px;
+			text-transform: uppercase;
+		}
+		.bt-sub-heading{
+			font-size: 15px;
+			line-height: 24px;
+		}
+		input[type="submit"]{
+			background: @secondary-color;
+			&:hover, &:focus{
+				color: #ffffff;
+				background: darken(@secondary-color, 10);
+			}
+		}
+	}
+	.bt-call-to-action-box{
+		color: #ffffff;
+		background: @main-color;
+		padding: 50px 40px;
+		h3{
+			font-size: 30px;
+			line-height: 36px;
+			color: #ffffff;
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 40px;
+		}
+		a{
+			display: block;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+			text-transform: uppercase;
+			text-align: center;
+			color: #ffffff;
+			background: #000000;
+			padding: 15px 30px;
+			-webkit-box-shadow: 5px 0 35px fadeout(#0e2c35, 92);
+			-ms-box-shadow: 5px 0 35px fadeout(#0e2c35, 92);
+			box-shadow: 5px 0 35px fadeout(#0e2c35, 92);
+		}
+	}
+}
+
+.archive.tax-bt_services_category article{
+	margin-bottom: 30px;
+	.bt-service-media-style;
+	.bt-service-item-header-style;
+}
+
+.single-bt_services article{
+	.bt-service-media-style;
+	.bt-service-item-header-style;
+	.bt-content{
+		.vc_line-chart{
+			background: #ffffff;
+			max-width: 670px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 40px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-box-shadow: 5px 0 35px fadeout(#000000, 85);
+			-ms-box-shadow: 5px 0 35px fadeout(#000000, 85);
+			box-shadow: 5px 0 35px fadeout(#000000, 85);
+			.vc_chart-with-legend{
+				width: 100%;
+			}
+			.vc_chart-legend{
+				display: block;
+				width: 100%;
+				text-align: center;
+				margin-top: 15px;
+				li{
+					display: inline-block;
+					margin: 0 15px;
+				}
+			}
+		}
+	}
+	@media(max-width: @screen-md - 1){
+		.bt-content .bt-brochure-block{
+			margin-top: 0;
+		}
+	}
+}

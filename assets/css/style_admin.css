@@ -1,0 +1,106 @@
+#redux-header .rAds{
+	display: none !important;
+	opacity: 0;
+	z-index: -9;
+}
+/* Extra vc param */
+.tb-taxonomy-block .tb-taxonomy-terms label{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;	
+}
+.tb-layout-block .bt-preview{
+	text-align: center;
+	background: #fafafa;
+	padding: 30px;
+}
+.tb-layout-block .bt-preview img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	-webkit-box-shadow: 5px 0 35px rgba(0,0,0, 0.15);
+	-ms-box-shadow: 5px 0 35px rgba(0,0,0, 0.15);
+	box-shadow: 5px 0 35px rgba(0,0,0, 0.15);
+}
+/* Theme options */
+#customize-controls .description{
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.bt-theme-required .bt-item{
+	font-size: 0;
+	letter-spacing: 0;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eeeeee;
+}
+.bt-theme-required .bt-item:last-child{
+	border-bottom: none;
+}
+.bt-theme-required .bt-item .bt-name{
+	font-size: 13px;
+	font-weight: 700;
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.bt-theme-required .bt-item .bt-content{
+	font-size: 13px;
+	width: 70%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.bt-theme-required .bt-item .bt-content .bt-desc{
+	font-style: italic;
+}
+.bt-theme-required .bt-item .bt-content .bt-title .bt-yes-icon,
+.bt-theme-required .bt-item .bt-content .bt-desc{
+	color: green;
+}
+.bt-theme-required .bt-item .bt-content .bt-title .bt-no-icon,
+.bt-theme-required .bt-item .bt-content .bt-desc .bt-error-message{
+	color: red;
+}
+/* Meta options */
+#fw-option-page-option .fw-options-tabs-list ul li a.nav-tab,
+#fw-option-post-option .fw-options-tabs-list ul li a.nav-tab{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#fw-option-page-option .fw-options-tabs-list ul li a:before,
+#fw-option-post-option .fw-options-tabs-list ul li a:before{
+    content: "\f108";
+	font-family: dashicons;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 0;
+    margin-right: 5px;
+	display: inline-block;
+    vertical-align: sub;
+}
+#fw-option-page-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-page-header"] a:before{
+	content: "\f313";
+}
+#fw-option-page-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-page-titlebar"] a:before{
+	content: "\f230";
+}
+#fw-option-page-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-page-footer"] a:before{
+	content: "\f488";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-gallery"] a:before{
+	content: "\f232";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-video"] a:before{
+	content: "\f235";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-audio"] a:before{
+	content: "\f521";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-quote"] a:before{
+	content: "\f122";
+}
+#fw-option-post-option .fw-options-tabs-list ul li[aria-controls="fw-options-tab-post-link"] a:before{
+	content: "\f103";
+}
+

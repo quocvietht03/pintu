@@ -1,0 +1,227 @@
+.single-fw-portfolio{
+	.fw-portfolio{
+		margin-bottom: 30px;
+		.bt-thumbnail{
+			overflow: hidden;
+			margin-bottom: 30px;
+			img{
+				.easing-animation-extra-long;
+				width: 100%;
+				height: auto;
+			}
+			&:hover{
+				img{
+					-wekbit-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+			}
+		}
+		.bt-gallery{
+			margin-bottom: 30px;
+			.bt-item{
+				overflow: hidden;
+				img{
+					.easing-animation-extra-long;
+					width: 100%;
+					height: auto;
+				}
+				&:hover{
+					img{
+						-wekbit-transform: scale(1.2);
+						-ms-transform: scale(1.2);
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+		.bt-title{
+			font-size: 22px;
+			line-height: 28px;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+		.bt-term{
+			position: relative;
+			margin-bottom: 30px;
+			padding-bottom: 15px;
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+				height: 2px;
+				background: @main-color;
+			}
+			a{
+				color: @main-color;
+				&:hover{
+					color: darken(@main-color, 10);
+				}
+			}
+		}
+		.bt-desc{
+			margin-bottom: 30px;
+		}
+		.bt-info, .bt-social{
+			h4{
+				position: relative;
+				font-size: 20px;
+				line-height: 28px;
+				margin-bottom: 30px;
+				padding-bottom: 10px;
+				&:after{
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 50px;
+					height: 2px;
+					background: @main-color;
+				}
+			}
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		.bt-info{
+			margin-bottom: 30px;
+			ul li{
+				margin-bottom: 10px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				span{
+					display: inline-block;
+					font-weight: 700;
+					color: #333333;
+					min-width: 120px;
+				}
+			}
+		}
+		.bt-social{
+			list-style: none;
+			margin: 0 0 30px;
+			padding: 0;
+			li{
+				display: inline-block;
+				a{
+					.bt-social-color;
+					display: inline-block;
+					width: 36px;
+					height: 36px;
+					font-size: 14px;
+					line-height: 36px;
+					text-align: center;
+					color: #333333;
+					background: #f5f5f5;
+					margin-right: 5px;
+					-webkit-border-radius: 50%;
+					border-radius: 50%;
+					&:hover{
+						.bt-social-background;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+		&.layout1{
+			margin-bottom: 60px;
+		}
+		&.layout2{
+			.bt-thumbnail, .bt-gallery{
+				margin-top: 30px;
+			}
+		}
+	}
+	.bt-related{
+		margin-bottom: 30px;
+		> .bt-title{
+			position: relative;
+			font-size: 22px;
+			line-height: 28px;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			padding-bottom: 15px;
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+				height: 2px;
+				background: @main-color;
+			}
+		}
+		.bt-item{
+			position: relative;
+			overflow: hidden;
+			.bt-thumb{
+				.easing-animation-extra-long;
+			}
+			.bt-overlay{
+				.easing-animation;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(160deg,fadeout(@main-color, 15) 0%,fadeout(@main-color, 15) 35%,fadeout(@secondary-color, 15) 100%);
+				opacity: 0;
+				.bt-content{
+					.ab-center;
+					width: 90%;
+					text-align: center;
+					.bt-title{
+						.easing-animation;
+						font-size: 18px;
+						line-height: 24px;
+						text-transform: uppercase;
+						margin-bottom: 0;
+						-webkit-transform: translateY(-30px);
+						-ms-transform: translateY(-30px);
+						transform: translateY(-30px);
+						a{
+							color: #ffffff;
+							&:hover{
+								color: darken(#ffffff, 10);
+							}
+						}
+					}
+					.bt-term{
+						.easing-animation;
+						-webkit-transform: translateY(30px);
+						-ms-transform: translateY(30px);
+						transform: translateY(30px);
+						a{
+							color: #ffffff;
+							&:hover{
+								color: darken(#ffffff, 10);
+							}
+						}
+					}
+				}
+			}
+			&:hover{
+				.bt-thumb{
+					-wekbit-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+				.bt-overlay{
+					opacity: 1;
+					.bt-content{
+						.bt-title, .bt-term{
+							-webkit-transform: translateY(0);
+							-ms-transform: translateY(0);
+							transform: translateY(0);
+						}
+					}
+				}
+			}
+		}
+	}
+}

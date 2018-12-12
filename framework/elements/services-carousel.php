@@ -325,7 +325,7 @@ vc_map(array(
 			'value' => 'full',
 			'dependency' => array(
 				'element'=>'layout',
-				'value'=> array('layout2', 'layout3', 'layout5', 'layout7', 'layout8', 'layout9')
+				'value'=> array('layout-img1', 'layout-img2', 'layout-img3', 'layout-img4', 'layout-img5')
 			),
 			'group' => esc_html__('Item Setting', 'pintu'),
 			'description' => esc_html__( 'Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height). Leave empty to use "full" size.', 'pintu' ),
